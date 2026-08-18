@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -12,73 +11,122 @@
 
     <title>Dymonnd IT</title>
 
+    <link rel="stylesheet" href="css/style.css">
     <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
+    rel="icon"
+    type="image/png"
+    href="favicon.png"
+>
 
 </head>
 
 
 <body>
 
-
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- NAVIGATION -->
     <header class="site-header">
 
+    <a href="index.html" class="brand">
+        <span class="brand-diamond">◆</span>
+        <span>DYMONND IT</span>
+    </a>
+
+
+    <!-- DESKTOP NAV -->
+    <nav class="desktop-nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
         <a
-            href="#home"
-            class="brand"
+            href="contact.html"
+            class="nav-button"
         >
-            <span class="brand-diamond">◆</span>
-            <span>DYMONND IT</span>
+            Get IT Support
         </a>
 
+    </nav>
 
-        <nav>
 
-            <a href="#services">
+    <!-- MOBILE MENU BUTTON -->
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+
+        <div class="mobile-menu-inner">
+
+            <p class="mobile-menu-label">
+                DYMONND / NAVIGATION
+            </p>
+
+
+            <a href="index.html">
+                <span>01</span>
+                Home
+            </a>
+
+            <a href="services.html">
+                <span>02</span>
                 Services
             </a>
 
-            <a href="#about">
+            <a href="about.html">
+                <span>03</span>
                 About
             </a>
 
-            <a href="#contact-form">
+            <a href="contact.html">
+                <span>04</span>
                 Contact
             </a>
 
+
             <a
-                href="#contact-form"
-                class="nav-button"
+                href="contact.html"
+                class="mobile-support-button"
             >
-                Get Support
+                GET IT SUPPORT
+                <span>↗</span>
             </a>
 
-        </nav>
 
-    </header>
+            <div class="mobile-menu-footer">
 
+                <span class="status-light"></span>
+
+                DYMONND SYSTEMS ONLINE
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
 
 
     <main>
 
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section
-            id="home"
-            class="hero"
-        >
-
-
-            <!-- LEFT -->
+        <!-- HERO -->
+        <section id="home" class="hero">
 
             <div class="hero-left">
 
@@ -88,32 +136,26 @@
                         IT SUPPORT • NETWORKING • SECURITY
                     </p>
 
-
                     <h1>
                         Technology
                         <span>that works</span>
                         for you.
                     </h1>
 
-
                     <p class="hero-description">
-
                         Reliable IT support, Microsoft 365,
                         networking and cybersecurity solutions
                         for homes and small businesses.
-
                     </p>
-
 
                     <div class="hero-actions">
 
                         <a
-                            href="#contact-form"
+                            href="contact.html"
                             class="primary-button"
                         >
                             GET SUPPORT
                         </a>
-
 
                         <a
                             href="#services"
@@ -130,12 +172,9 @@
             </div>
 
 
-            <!-- RIGHT -->
-
             <div class="hero-right">
 
                 <div class="hero-glow"></div>
-
 
                 <img
                     src="Newlogo.png"
@@ -143,22 +182,16 @@
                     class="hero-logo"
                 >
 
-
                 <p class="side-label">
                     CENTRAL COAST • NSW
                 </p>
 
             </div>
 
-
         </section>
 
 
-
-        <!-- =========================
-             SERVICES INTRO
-        ========================== -->
-
+        <!-- SERVICES INTRO -->
         <section
             id="services"
             class="services-intro"
@@ -168,39 +201,25 @@
                 WHAT WE DO
             </p>
 
-
             <h2>
                 IT without the headache.
             </h2>
 
-
             <p class="section-description">
-
-                From everyday technical problems to business
-                systems, Dymonnd IT helps keep your technology
-                connected, secure and running properly.
-
+                From everyday technical problems to business systems,
+                Dymonnd IT helps keep your technology connected,
+                secure and running properly.
             </p>
 
         </section>
 
 
-
-        <!-- =========================
-             SCROLLING SERVICES
-        ========================== -->
-
+        <!-- SCROLLING SERVICES -->
         <section class="services-scroll">
 
 
-            <!-- =====================
-                 LEFT SERVICE STORY
-            ====================== -->
-
+            <!-- LEFT -->
             <div class="service-story">
-
-
-                <!-- IT SUPPORT -->
 
                 <article
                     class="service-step active"
@@ -211,35 +230,27 @@
                         01
                     </p>
 
-
                     <div class="service-step-content">
 
                         <p class="eyebrow">
                             IT SUPPORT
                         </p>
 
-
                         <h2>
                             When technology stops,
                             we get it moving.
                         </h2>
 
-
                         <p class="service-description">
-
                             Troubleshooting, computer setup,
                             software support, device issues
                             and everyday technical assistance.
-
                         </p>
 
                     </div>
 
                 </article>
 
-
-
-                <!-- MICROSOFT 365 -->
 
                 <article
                     class="service-step"
@@ -250,34 +261,26 @@
                         02
                     </p>
 
-
                     <div class="service-step-content">
 
                         <p class="eyebrow">
                             MICROSOFT 365
                         </p>
 
-
                         <h2>
                             Your business.
                             Connected.
                         </h2>
 
-
                         <p class="service-description">
-
                             Microsoft 365 setup, email configuration,
                             user management and administration.
-
                         </p>
 
                     </div>
 
                 </article>
 
-
-
-                <!-- NETWORKING -->
 
                 <article
                     class="service-step"
@@ -288,35 +291,27 @@
                         03
                     </p>
 
-
                     <div class="service-step-content">
 
                         <p class="eyebrow">
                             NETWORKING
                         </p>
 
-
                         <h2>
                             Keep everything
                             talking.
                         </h2>
 
-
                         <p class="service-description">
-
                             Wi-Fi, routers, switches,
                             network troubleshooting and small
                             business network configuration.
-
                         </p>
 
                     </div>
 
                 </article>
 
-
-
-                <!-- CYBERSECURITY -->
 
                 <article
                     class="service-step"
@@ -327,47 +322,35 @@
                         04
                     </p>
 
-
                     <div class="service-step-content">
 
                         <p class="eyebrow">
                             CYBERSECURITY
                         </p>
 
-
                         <h2>
                             Protect what
                             matters.
                         </h2>
 
-
                         <p class="service-description">
-
                             Account security, safer systems,
                             security guidance and practical
                             protection for your technology.
-
                         </p>
 
                     </div>
 
                 </article>
 
-
             </div>
 
 
-
-            <!-- =====================
-                 RIGHT STICKY VISUAL
-            ====================== -->
-
+            <!-- RIGHT -->
             <div class="service-sticky">
 
                 <div class="stage-grid"></div>
 
-
-                <!-- PROGRESS -->
 
                 <div class="service-progress">
 
@@ -394,11 +377,7 @@
                 </div>
 
 
-
-                <!-- =====================
-                     IT SUPPORT VISUAL
-                ====================== -->
-
+                <!-- SUPPORT -->
                 <div
                     class="stage-visual active"
                     data-visual="0"
@@ -407,7 +386,6 @@
                     <p class="stage-number">
                         01 / 04
                     </p>
-
 
                     <div class="support-visual">
 
@@ -419,27 +397,18 @@
                                 <span></span>
                             </div>
 
-
                             <div class="terminal-line long"></div>
-
                             <div class="terminal-line medium"></div>
-
                             <div class="terminal-line short"></div>
 
-
                             <div class="terminal-status">
-
                                 <span class="status-dot"></span>
-
                                 SYSTEM ONLINE
-
                             </div>
 
                         </div>
 
-
                         <div class="monitor-stand"></div>
-
 
                         <div class="diagnostic-badge">
                             ✓
@@ -447,27 +416,15 @@
 
                     </div>
 
-
                     <div class="stage-text">
-
-                        <span>
-                            DYMONND IT
-                        </span>
-
-                        <strong>
-                            TECHNICAL SUPPORT
-                        </strong>
-
+                        <span>DYMONND IT</span>
+                        <strong>TECHNICAL SUPPORT</strong>
                     </div>
 
                 </div>
 
 
-
-                <!-- =====================
-                     MICROSOFT 365 VISUAL
-                ====================== -->
-
+                <!-- MICROSOFT 365 -->
                 <div
                     class="stage-visual"
                     data-visual="1"
@@ -477,33 +434,26 @@
                         02 / 04
                     </p>
 
-
                     <div class="cloud-visual">
 
                         <div class="orbit orbit-one"></div>
-
                         <div class="orbit orbit-two"></div>
-
 
                         <div class="cloud-core">
                             <span>365</span>
                         </div>
 
-
                         <div class="app-tile tile-one">
                             M
                         </div>
-
 
                         <div class="app-tile tile-two">
                             ☁
                         </div>
 
-
                         <div class="app-tile tile-three">
                             @
                         </div>
-
 
                         <div class="app-tile tile-four">
                             T
@@ -511,27 +461,15 @@
 
                     </div>
 
-
                     <div class="stage-text">
-
-                        <span>
-                            DYMONND IT
-                        </span>
-
-                        <strong>
-                            MICROSOFT 365
-                        </strong>
-
+                        <span>DYMONND IT</span>
+                        <strong>MICROSOFT 365</strong>
                     </div>
 
                 </div>
 
 
-
-                <!-- =====================
-                     NETWORKING VISUAL
-                ====================== -->
-
+                <!-- NETWORK -->
                 <div
                     class="stage-visual"
                     data-visual="2"
@@ -541,27 +479,17 @@
                         03 / 04
                     </p>
 
-
                     <div class="network-visual">
 
-
                         <div class="network-node node-one"></div>
-
                         <div class="network-node node-two"></div>
-
                         <div class="network-node node-three"></div>
-
                         <div class="network-node node-four"></div>
 
-
                         <div class="network-line line-one"></div>
-
                         <div class="network-line line-two"></div>
-
                         <div class="network-line line-three"></div>
-
                         <div class="network-line line-four"></div>
-
 
                         <div class="switch-device">
 
@@ -569,9 +497,7 @@
                                 DYMONND NETWORK
                             </div>
 
-
                             <div class="ports">
-
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -580,34 +506,21 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
-
                             </div>
 
                         </div>
 
                     </div>
 
-
                     <div class="stage-text">
-
-                        <span>
-                            DYMONND IT
-                        </span>
-
-                        <strong>
-                            NETWORKING
-                        </strong>
-
+                        <span>DYMONND IT</span>
+                        <strong>NETWORKING</strong>
                     </div>
 
                 </div>
 
 
-
-                <!-- =====================
-                     CYBERSECURITY VISUAL
-                ====================== -->
-
+                <!-- SECURITY -->
                 <div
                     class="stage-visual"
                     data-visual="3"
@@ -617,20 +530,16 @@
                         04 / 04
                     </p>
 
-
                     <div class="security-visual">
 
                         <div class="security-ring ring-one"></div>
-
                         <div class="security-ring ring-two"></div>
-
 
                         <div class="shield">
 
                             <div class="lock">
 
                                 <div class="lock-loop"></div>
-
 
                                 <div class="lock-body">
                                     <span></span>
@@ -640,487 +549,99 @@
 
                         </div>
 
-
                         <div class="scan-line"></div>
 
                     </div>
 
-
                     <div class="stage-text">
-
-                        <span>
-                            DYMONND IT
-                        </span>
-
-                        <strong>
-                            CYBERSECURITY
-                        </strong>
-
+                        <span>DYMONND IT</span>
+                        <strong>CYBERSECURITY</strong>
                     </div>
 
                 </div>
 
-
             </div>
-
 
         </section>
 
 
+        <!-- ABOUT TEASER -->
+        <section class="home-about">
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section
-            id="about"
-            class="about-founder"
-        >
-
-
-            <!-- PHOTO -->
-
-            <div class="about-photo-side">
-
-                <div class="photo-frame">
-
-
-                    <img
-                        src="about-photo.jpg"
-                        alt="Shanice from Dymonnd IT"
-                        class="about-photo"
-                    >
-
-
-                    <div class="photo-glow"></div>
-
-
-                    <div class="photo-label">
-
-                        <span class="status-light"></span>
-
-                        PERSON BEHIND DYMONND
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ABOUT TEXT -->
-
-            <div class="about-content">
+            <div class="home-about-label">
 
                 <p class="eyebrow">
-                    ABOUT DYMONND IT
+                    ABOUT DYMONND
                 </p>
 
+                <span>
+                    01 / HUMAN
+                </span>
+
+            </div>
+
+
+            <div class="home-about-main">
 
                 <h2>
-
                     Technology with
-
-                    <span>
-                        a human
-                    </span>
-
+                    <span>a human</span>
                     behind it.
-
                 </h2>
 
+                <div class="home-about-copy">
 
-                <p class="about-lead">
+                    <p>
+                        Dymonnd IT is built around practical support,
+                        clear communication and technology that makes sense.
+                    </p>
 
-                    Hi, I'm Shanice, the person behind Dymonnd IT.
-
-                </p>
-
-
-                <p class="about-description">
-
-                    Dymonnd IT is built around making technology
-                    easier to understand, manage and use.
-
-                    The focus is practical support, clear
-                    communication and solutions that actually
-                    make sense.
-
-                </p>
-
-
-
-                <div class="about-details">
-
-
-                    <div class="about-detail">
-
-                        <span>
-                            01
-                        </span>
-
-
-                        <div>
-
-                            <strong>
-                                PRACTICAL
-                            </strong>
-
-                            <p>
-                                No unnecessary jargon.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="about-detail">
-
-                        <span>
-                            02
-                        </span>
-
-
-                        <div>
-
-                            <strong>
-                                APPROACHABLE
-                            </strong>
-
-                            <p>
-                                Technology explained clearly.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="about-detail">
-
-                        <span>
-                            03
-                        </span>
-
-
-                        <div>
-
-                            <strong>
-                                SECURITY MINDED
-                            </strong>
-
-                            <p>
-                                Built with safer technology in mind.
-                            </p>
-
-                        </div>
-
-                    </div>
-
+                    <a
+                        href="about.html"
+                        class="outline-button"
+                    >
+                        MEET DYMONND IT
+                        <span>↗</span>
+                    </a>
 
                 </div>
 
             </div>
 
-
         </section>
 
 
-
-        <!-- =========================
-             CONTACT FORM
-        ========================== -->
-
-        <section
-            id="contact-form"
-            class="contact-section"
-        >
-
-
-            <!-- LEFT -->
-
-            <div class="contact-intro">
-
-                <p class="contact-eyebrow">
-                    LET'S TALK
-                </p>
-
-
-                <h2>
-
-                    Need IT<br>
-                    support?
-
-                </h2>
-
-
-                <p class="contact-description">
-
-                    Tell Dymonnd IT what's going on and provide
-                    a few details.
-
-                    We'll use them to work out the best next step.
-
-                </p>
-
-
-                <div class="contact-note">
-
-                    <span></span>
-
-                    CENTRAL COAST • NSW
-
-                </div>
-
-            </div>
-
-
-
-            <!-- FORM -->
-
-            <div class="contact-form-panel">
-
-
-                <form id="supportForm">
-
-
-                    <div class="form-heading">
-
-                        <span>
-                            SUPPORT REQUEST
-                        </span>
-
-                        <span>
-                            01 / CONTACT
-                        </span>
-
-                    </div>
-
-
-
-                    <!-- NAME + EMAIL -->
-
-                    <div class="form-row">
-
-
-                        <div class="form-group">
-
-                            <label for="name">
-                                YOUR NAME *
-                            </label>
-
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Your name"
-                                autocomplete="name"
-                                required
-                            >
-
-                        </div>
-
-
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                EMAIL ADDRESS *
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="you@example.com"
-                                autocomplete="email"
-                                required
-                            >
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <!-- PHONE + SERVICE -->
-
-                    <div class="form-row">
-
-
-                        <div class="form-group">
-
-                            <label for="phone">
-                                PHONE
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="04xx xxx xxx"
-                                autocomplete="tel"
-                            >
-
-                        </div>
-
-
-
-                        <div class="form-group">
-
-                            <label for="service">
-                                SERVICE *
-                            </label>
-
-
-                            <select
-                                id="service"
-                                name="service"
-                                required
-                            >
-
-                                <option value="">
-                                    Select a service
-                                </option>
-
-                                <option value="IT Support">
-                                    IT Support
-                                </option>
-
-                                <option value="Microsoft 365">
-                                    Microsoft 365
-                                </option>
-
-                                <option value="Networking">
-                                    Networking
-                                </option>
-
-                                <option value="Cybersecurity">
-                                    Cybersecurity
-                                </option>
-
-                                <option value="Other">
-                                    Something Else
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <!-- BUSINESS -->
-
-                    <div class="form-group">
-
-                        <label for="business">
-                            BUSINESS / ORGANISATION
-                        </label>
-
-
-                        <input
-                            type="text"
-                            id="business"
-                            name="business"
-                            placeholder="Optional"
-                            autocomplete="organization"
-                        >
-
-                    </div>
-
-
-
-                    <!-- MESSAGE -->
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            WHAT'S GOING ON? *
-                        </label>
-
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Give us a quick description of what you need help with..."
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-
-                    <!-- SUBMIT -->
-
-                    <div class="form-footer">
-
-                        <p>
-                            * Required fields
-                        </p>
-
-
-                        <button
-                            type="submit"
-                            class="form-submit"
-                        >
-
-                            <span>
-                                SEND REQUEST
-                            </span>
-
-                            <span class="submit-arrow">
-                                ↗
-                            </span>
-
-                        </button>
-
-                    </div>
-
-
-                    <p
-                        id="formStatus"
-                        class="form-status"
-                        aria-live="polite"
-                    ></p>
-
-
-                </form>
-
-
-            </div>
-
+        <!-- HOME CTA -->
+        <section class="home-cta">
+
+            <p>
+                NEED IT SUPPORT?
+            </p>
+
+            <h2>
+                Let's get your
+                tech sorted.
+            </h2>
+
+            <a
+                href="contact.html"
+                class="cta-button"
+            >
+                GET IN TOUCH
+                <span>↗</span>
+            </a>
 
         </section>
-
 
     </main>
 
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
-
 
         <div class="footer-main">
 
-
-            <!-- BRAND -->
-
             <div class="footer-brand">
-
 
                 <img
                     src="Newlogo.png"
@@ -1128,26 +649,58 @@
                     class="footer-logo"
                 >
 
-
                 <p class="footer-tagline">
                     Technology that works for you.
                 </p>
 
-
                 <div class="footer-status">
-
                     <span class="status-light"></span>
-
                     DYMONND SYSTEMS ONLINE
-
                 </div>
+                <div class="footer-socials">
 
+    <a
+        href="#"
+        class="social-link"
+        aria-label="Dymonnd IT on LinkedIn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.9c0-3.8-2-5.6-4.7-5.6-2.2 0-3.2 1.2-3.7 2V8.5H9.1V21h3.5v-6.2c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3V21H21v-7.1Z"/>
+        </svg>
+    </a>
+
+
+    <a
+        href="#"
+        class="social-link"
+        aria-label="Dymonnd IT on Facebook"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 8h3V4.5c-.5-.1-2.2-.2-4.2-.2-4.1 0-6.8 2.5-6.8 7v3.9H2V19h4v9h5v-9h4.2l.7-3.8H11v-3.5C11 10.6 11.3 8 14 8Z"/>
+        </svg>
+    </a>
+
+
+    <a
+        href="#"
+        class="social-link"
+        aria-label="Dymonnd IT on Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm0 2A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8ZM17.3 6.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+        </svg>
+    </a>
+
+</div>
 
             </div>
 
-
-
-            <!-- SERVICES -->
 
             <div class="footer-column">
 
@@ -1155,28 +708,24 @@
                     SERVICES
                 </p>
 
-
-                <a href="#services">
+                <a href="services.html">
                     IT Support
                 </a>
 
-                <a href="#services">
+                <a href="services.html">
                     Microsoft 365
                 </a>
 
-                <a href="#services">
+                <a href="services.html">
                     Networking
                 </a>
 
-                <a href="#services">
+                <a href="services.html">
                     Cybersecurity
                 </a>
 
             </div>
 
-
-
-            <!-- EXPLORE -->
 
             <div class="footer-column">
 
@@ -1184,28 +733,24 @@
                     EXPLORE
                 </p>
 
-
-                <a href="#home">
+                <a href="index.html">
                     Home
                 </a>
 
-                <a href="#about">
+                <a href="about.html">
                     About
                 </a>
 
-                <a href="#services">
+                <a href="services.html">
                     Services
                 </a>
 
-                <a href="#contact-form">
+                <a href="contact.html">
                     Contact
                 </a>
 
             </div>
 
-
-
-            <!-- CTA -->
 
             <div class="footer-contact">
 
@@ -1213,86 +758,54 @@
                     NEED SUPPORT?
                 </p>
 
-
                 <h3>
-
                     Let's get your<br>
                     tech sorted.
-
                 </h3>
 
-
                 <a
-                    href="#contact-form"
+                    href="contact.html"
                     class="footer-button"
                 >
-
                     GET IN TOUCH
 
-                    <span>
-                        ↗
-                    </span>
-
+                    <span>↗</span>
                 </a>
 
             </div>
 
-
         </div>
-
 
 
         <div class="footer-divider"></div>
 
 
-
         <div class="footer-bottom">
-
 
             <p>
                 © 2026 DYMONND IT
             </p>
 
-
             <div class="footer-bottom-center">
 
-                <span>
-                    SUPPORT
-                </span>
-
-                <b>
-                    ◆
-                </b>
-
-                <span>
-                    NETWORKING
-                </span>
-
-                <b>
-                    ◆
-                </b>
-
-                <span>
-                    SECURITY
-                </span>
+                <span>SUPPORT</span>
+                <b>◆</b>
+                <span>NETWORKING</span>
+                <b>◆</b>
+                <span>SECURITY</span>
 
             </div>
-
 
             <p>
                 DYMONNDIT.COM
             </p>
 
-
         </div>
-
 
     </footer>
 
 
-
     <script src="js/script.js"></script>
-
 
 </body>
 

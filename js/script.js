@@ -84,3 +84,84 @@ const serviceObserver =
 serviceSteps.forEach((step) => {
     serviceObserver.observe(step);
 });
+const supportForm =
+    document.querySelector("#supportForm");
+
+const formStatus =
+    document.querySelector("#formStatus");
+
+
+if (supportForm) {
+
+    supportForm.addEventListener(
+        "submit",
+        (event) => {
+
+            event.preventDefault();
+
+            formStatus.textContent =
+                "Form submission will be enabled when Dymonnd IT goes live.";
+
+        }
+    );
+
+}
+const menuToggle =
+    document.querySelector(".menu-toggle");
+
+const mobileMenu =
+    document.querySelector(".mobile-menu");
+
+
+if (menuToggle && mobileMenu) {
+
+    menuToggle.addEventListener("click", () => {
+
+        const isOpen =
+            mobileMenu.classList.toggle("open");
+
+
+        menuToggle.classList.toggle(
+            "active",
+            isOpen
+        );
+
+
+        document.body.classList.toggle(
+            "menu-open",
+            isOpen
+        );
+
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+    });
+
+
+    const mobileLinks =
+        mobileMenu.querySelectorAll("a");
+
+
+    mobileLinks.forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            mobileMenu.classList.remove("open");
+
+            menuToggle.classList.remove("active");
+
+            document.body.classList.remove("menu-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+
+}
