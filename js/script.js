@@ -95,15 +95,75 @@ if (supportForm) {
 
     supportForm.addEventListener(
         "submit",
-        (event) => {
+        async (event) => {
 
             event.preventDefault();
 
             formStatus.textContent =
-                "Form submission will be enabled when Dymonnd IT goes live.";
+                "Sending request...";
+
+
+            const formData =
+                new FormData(supportForm);
+
+
+            const data =
+                Object.fromEntries(
+                    formData.entries()
+                );
+
+
+            try {
+
+                const response =
+                    await fetch(
+                        "/api/support",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            body:
+                                JSON.stringify(data)
+                        }
+                    );
+
+
+                const result =
+                    await response.json();
+
+
+                if (result.success) {
+
+                    formStatus.textContent =
+                        "Request sent successfully.";
+
+                    supportForm.reset();
+
+                } else {
+
+                    formStatus.textContent =
+                        "Something went wrong. Please try again.";
+
+                }
+
+
+            } catch (error) {
+
+                console.error(error);
+
+                formStatus.textContent =
+                    "Unable to send your request. Please try again.";
+
+            }
 
         }
     );
+
+}
 
 }
 const menuToggle =
