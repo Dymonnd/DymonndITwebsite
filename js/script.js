@@ -165,7 +165,6 @@ if (supportForm) {
 
 }
 
-}
 const menuToggle =
     document.querySelector(".menu-toggle");
 
