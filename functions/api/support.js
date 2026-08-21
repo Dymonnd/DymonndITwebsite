@@ -4,6 +4,12 @@ export async function onRequestPost(context) {
 
         const data = await context.request.json();
 
+        <div
+    class="cf-turnstile"
+    data-sitekey="0x4AAAAAAEXl5Z1dpExBUSQ9"
+    data-theme="dark"
+    data-action="support">
+</div>
 
         const name = String(data.name || "").trim();
         const email = String(data.email || "").trim();
