@@ -123,6 +123,7 @@ Planned improvements may include:
 
 ## 👤 Author
 
+**Shanice Hughes**
 **Dymonnd IT**
 
 IT Support • Microsoft 365 • Networking • Cybersecurity
